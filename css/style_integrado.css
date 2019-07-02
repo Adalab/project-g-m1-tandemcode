@@ -79,6 +79,10 @@ body {
 .header__link:hover {
   color: #099d8d;
 }
+.tandem-code__link {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 /* CSS HEADER MEDIA */
 
