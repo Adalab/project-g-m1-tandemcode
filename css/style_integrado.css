@@ -106,6 +106,15 @@ body {
   .header__link:hover {
     color: rgba(20, 217, 196, 0.9);
   }
+  .header__nav-list {
+    justify-content: flex-end;
+  }
+  .header__nav-item{
+    padding-right: 18px;
+  }
+  .header__nav-item:last-child{
+    padding-right:0;
+  }
 }
 
 @media all and (min-width: 75rem) {
@@ -135,6 +144,15 @@ body {
   }
   .header__link:hover {
     color: rgba(20, 217, 196, 0.9);
+  }
+  .header__nav-list {
+    justify-content: flex-end;
+  }
+  .header__nav-item{
+    padding-right: 18px;
+  }
+  .header__nav-item:last-child{
+    padding-right:0;
   }
 }
 
