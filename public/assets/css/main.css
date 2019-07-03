@@ -62,7 +62,7 @@ body {
 }
 
 .header__link:hover {
-  color: #099d8d;
+  color: #1d0029;
 }
 
 .tandem-code__link {
@@ -247,12 +247,12 @@ body {
 }
 
 .social-list__link:hover {
-  color: #14d9c4;
+  color: #1d0029;
 }
 
 .fab:hover,.fas:hover {
-  -webkit-transform: scale(2);
-  transform: scale(2);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }/* FOOTER CSS */.footer {
   font-family: "Open Sans", sans-serif;
   border-top: 0.0625rem solid #b8b8b9;
@@ -344,7 +344,7 @@ body {
   }
 
   .header__link:hover {
-    color: rgba(20, 217, 196, 0.9);
+    color: #1d0029;
   }
 
   .header__nav-list {

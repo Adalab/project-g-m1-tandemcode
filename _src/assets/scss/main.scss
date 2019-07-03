@@ -77,7 +77,7 @@ body {
 }
 
 .header__link:hover {
-  color: #099d8d;
+  color: #1d0029;
 }
 .tandem-code__link {
   text-decoration: none;
@@ -104,7 +104,7 @@ body {
     margin: 0 2.8125rem 0 0;
   }
   .header__link:hover {
-    color: rgba(20, 217, 196, 0.9);
+    color: #1d0029;
   }
   .header__nav-list {
     justify-content: flex-end;
@@ -401,11 +401,11 @@ body {
   color: #099d8d;
 }
 .social-list__link:hover {
-  color: rgb(20, 217, 196);
+  color:#1d0029;
 }
 .fab:hover,
 .fas:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 @media all and (min-width: 48rem) {
