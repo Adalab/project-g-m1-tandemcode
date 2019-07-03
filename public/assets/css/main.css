@@ -73,7 +73,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 91vh;
+  height: 421px;
   position: relative;
   top: 0;
   left: 0;
@@ -305,7 +305,14 @@ body {
 
 .logo-ada__img {
   width: 100%;
-}/* FOOTER MEDIA */@media all and (min-width: 48rem) {
+}/* FOOTER MEDIA */@media all and (min-width: 21.75rem) {
+  .hero__text {
+    -webkit-transform: translatey(45%);
+    transform: translatey(45%);
+  }
+}
+
+@media all and (min-width: 48rem) {
   .container {
     margin: 0 2.8125rem;
   }
@@ -562,6 +569,10 @@ body {
 
   .header__nav-item:last-child {
     padding-right: 0;
+  }
+
+  .hero {
+    height: 550px;
   }
 
   .hero__text {

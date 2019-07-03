@@ -163,7 +163,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 91vh;
+  height: 421px;
   position: relative;
   top: 0;
   left: 0;
@@ -185,6 +185,12 @@ body {
 
 /* HERO MEDIA */
 
+@media all and (min-width: 21.75rem) {
+  .hero__text {
+    transform: translatey(45%);
+  }
+}
+
 @media all and (min-width: 48rem) {
   .hero__text {
     transform: translatey(0%);
@@ -194,6 +200,8 @@ body {
 }
 
 @media all and (min-width: 75rem) {
+  .hero{
+    height: 550px; }
   .hero__text {
     transform: translatey(0%);
     background-color: rgba(255, 255, 255, 0.8);
@@ -202,6 +210,7 @@ body {
     line-height: 1.25;
   }
 }
+
 
 /*TEAM SECTION CSS*/
 
