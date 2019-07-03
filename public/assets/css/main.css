@@ -63,6 +63,11 @@ body {
 
 .header__link:hover {
   color: #099d8d;
+}
+
+.tandem-code__link {
+  text-decoration: none;
+  color: #ffffff;
 }/* CSS HEADER MEDIA *//* HERO CSS */.hero {
   background-image: url(../images/tandem.jpeg);
   background-size: cover;
@@ -335,6 +340,20 @@ body {
     color: rgba(20, 217, 196, 0.9);
   }
 
+  .header__nav-list {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .header__nav-item {
+    padding-right: 18px;
+  }
+
+  .header__nav-item:last-child {
+    padding-right: 0;
+  }
+
   .hero__text {
     -webkit-transform: translatey(0%);
     transform: translatey(0%);
@@ -529,6 +548,20 @@ body {
 
   .header__link:hover {
     color: rgba(20, 217, 196, 0.9);
+  }
+
+  .header__nav-list {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .header__nav-item {
+    padding-right: 18px;
+  }
+
+  .header__nav-item:last-child {
+    padding-right: 0;
   }
 
   .hero__text {
