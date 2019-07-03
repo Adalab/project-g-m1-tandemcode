@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-.DS_Store
-node_modules
-=======
 # Created by https://www.gitignore.io/api/sass,node,bower,macos
 
 ### Bower ###
@@ -56,4 +52,3 @@ node_modules/
 
 ### Public folder
 public
->>>>>>> mgulp
