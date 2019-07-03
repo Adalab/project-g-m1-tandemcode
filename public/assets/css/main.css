@@ -294,7 +294,7 @@ body {
 }
 
 .footer__link:hover {
-  color: #099d8d;
+  color: #1d0029;
 }
 
 .logo-ada {
@@ -554,7 +554,7 @@ body {
   }
 
   .header__link:hover {
-    color: rgba(20, 217, 196, 0.9);
+    color: #1d0029;
   }
 
   .header__nav-list {
