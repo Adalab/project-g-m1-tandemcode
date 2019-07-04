@@ -14,10 +14,10 @@ body {
 /* Import de los partials*/
 @import 'layouts/_container.scss';
 @import 'partials/_header.scss';
-@import 'partials/_heromain.scss';
-@import 'partials/_teammain.scss';
-@import 'partials/_whomain.scss';
+@import 'partials/index/_hero.scss';
+@import 'partials/index/_team.scss';
+@import 'partials/index/_who.scss';
 @import 'partials/_footer.scss';
 
-@import 'layouts/_herocontact.scss';
+@import 'partials/contact/_hero.scss';
 
