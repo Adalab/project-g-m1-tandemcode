@@ -11,34 +11,17 @@
     justify-content: center;
     align-items: flex-end;
 }
-@media all and (min-width: 21.75rem) {
-    .main__herocontact{
-        background-image: url('../images/grupo.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 421px;
-        position: relative;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-  }
-  
-  @media all and (min-width: 48rem) {
-    .main__herocontact{
-        background-image: url('../images/grupo.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 421px;
-        position: relative;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-  }
+.contact__title {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(20, 217, 196);
+    text-transform: uppercase;
+    line-height: 1.88;
+}
+.contact__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #54585a;
+}
