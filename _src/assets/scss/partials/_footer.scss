@@ -1,0 +1,101 @@
+/* FOOTER CSS */
+
+.footer {
+  font-family: "Open Sans", sans-serif;
+  border-top: 0.0625rem solid #b8b8b9;
+  padding: 1.875rem 0 2.8125rem 0;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #b8b8b9;
+  margin: 0;
+  line-height: 1.43;
+}
+
+.footer__nav {
+  box-sizing: border-box;
+  padding: 1.25rem 0 1.875rem 0;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.43;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #54585a;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.footer__link {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer__link:hover {
+  color: #1d0029;
+}
+
+.logo-ada {
+  width: 7.1875rem;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.logo-ada__img {
+  width: 100%;
+}
+
+/* FOOTER MEDIA */
+
+@media all and (min-width: 48rem) {
+  .footer {
+    height: 10.625rem;
+    padding: 1.875rem 0;
+    box-sizing: border-box;
+  }
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 7.5rem;
+  }
+  .footer__text {
+    order: 0;
+    text-align: left;
+    margin: 0 0 0.9375rem;
+    display: inline-block;
+    width: 50%;
+  }
+  .footer__nav {
+    order: 2;
+    padding: 0;
+    width: 50%;
+    box-sizing: border-box;
+    align-self: flex-end;
+    bottom: 5.625rem;
+  }
+  .footer__nav-list,
+  .footer__link {
+    line-height: 2.14;
+    text-align: right;
+  }
+  .logo-ada {
+    order: 1;
+    margin: 0;
+  }
+}
+
+@media all and (min-width: 75rem) {
+  .footer {
+    height: 10rem;
+  }
+}

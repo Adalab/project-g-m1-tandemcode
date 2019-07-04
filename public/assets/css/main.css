@@ -66,25 +66,7 @@ body {
 .tandem-code__link {
   text-decoration: none;
   color: #ffffff;
-}/* CSS HEADER MEDIA */.main__herocontact {
-  background-image: url("../images/grupo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 421px;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-}/* HERO CSS */.hero {
+}/* CSS HEADER MEDIA *//* HERO CSS */.hero {
   background-image: url(../images/tandem.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -321,7 +303,32 @@ body {
 
 .logo-ada__img {
   width: 100%;
-}/* FOOTER MEDIA */@media all and (min-width: 21.75rem) {
+}/* FOOTER MEDIA */.main__herocontact {
+  background-image: url("../images/grupo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 421px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media all and (min-width: 21.75rem) {
+  .hero__text {
+    -webkit-transform: translatey(45%);
+    transform: translatey(45%);
+  }
+
   .main__herocontact {
     background-image: url("../images/grupo.jpg");
     background-size: cover;
@@ -340,11 +347,6 @@ body {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-  }
-
-  .hero__text {
-    -webkit-transform: translatey(45%);
-    transform: translatey(45%);
   }
 }
 
@@ -395,26 +397,6 @@ body {
 
   .header__nav-item:last-child {
     padding-right: 0;
-  }
-
-  .main__herocontact {
-    background-image: url("../images/grupo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 421px;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
   }
 
   .hero__text {
@@ -564,6 +546,26 @@ body {
     -ms-flex-order: 1;
     order: 1;
     margin: 0;
+  }
+
+  .main__herocontact {
+    background-image: url("../images/grupo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 421px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
 }
 
