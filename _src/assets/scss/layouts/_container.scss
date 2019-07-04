@@ -1,0 +1,19 @@
+.container {
+  margin: 0 0.9375rem;
+}
+
+/* CONTAINER @MEDIA */
+
+@media all and (min-width: 48rem) {
+  .container {
+    margin: 0 2.8125rem;
+  }
+}
+
+@media all and (min-width: 75rem) {
+  .container {
+    margin: 0 auto;
+    width: 57.75rem;
+  }
+}
+
