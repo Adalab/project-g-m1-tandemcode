@@ -1,4 +1,22 @@
-@charset "UTF-8";/* GENERAL CSS */* {
+@charset "UTF-8";/* Import de los partials*/.main__herocontact {
+  background-image: url("../images/tandem.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 421px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}/* GENERAL CSS */* {
   padding: 0;
   margin: 0;
 }
