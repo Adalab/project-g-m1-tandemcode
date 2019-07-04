@@ -324,6 +324,26 @@ body {
 .logo-ada__img {
   width: 100%;
 }/* FOOTER MEDIA */@media all and (min-width: 21.75rem) {
+  .main__herocontact {
+    background-image: url("../images/grupo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 421px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
   .hero__text {
     -webkit-transform: translatey(45%);
     transform: translatey(45%);
@@ -331,6 +351,26 @@ body {
 }
 
 @media all and (min-width: 48rem) {
+  .main__herocontact {
+    background-image: url("../images/grupo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 421px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
   .container {
     margin: 0 2.8125rem;
   }
