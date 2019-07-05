@@ -1,0 +1,56 @@
+<section class="form">
+    <div class="container__contact-form">
+        <form class="contact-form" action="/signup" method="post">
+          <label class="contact-form-label label_name" for="contact-form_name"
+            >Nombre completo <span>*</span></label
+          >
+
+          <input
+            class="contact-form-input"
+            id="contact-form_name"
+            type="text"
+            name="Nombre completo *"
+            placeholder="Nombre..."
+            required
+          />
+
+          <label class="contact-form-label" for="contact-form_email"
+            >Email <span>*</span></label
+          >
+
+          <input
+            class="contact-form-input"
+            id="contact-form_email"
+            type="email"
+            name="Email"
+            placeholder="nombre.apellidos@mail.com"
+            required
+          />
+
+          <label class="contact-form-label" for="contact-form_phone"
+            >Teléfono</label
+          >
+
+          <input
+            class="contact-form-input"
+            id="contact-form_phone"
+            type="tel"
+            name="Teléfono"
+            placeholder="Ej:123456789"
+          />
+
+          <label class="contact-form-label" for="contact-form_message"
+            >Mensaje <span>*</span></label
+          >
+
+          <textarea
+            id="contact-form_message"
+            name="Mensaje"
+            placeholder="¿Qué necesitas?"
+            required
+          ></textarea>
+
+          <input id="contact-form_button" type="submit" value="ENVIAR" />
+        </form>
+      </div>
+</section>
