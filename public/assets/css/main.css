@@ -207,6 +207,26 @@ body {
   border-radius: 0.25rem;
 }
 
+.andre__image:hover {
+  content: url("../images/andre-1x1.gif");
+}
+
+.coco__image:hover {
+  content: url("../images/coco-1x1.gif");
+}
+
+.cris__image:hover {
+  content: url("../images/cris-1x1.gif");
+}
+
+.eva__image:hover {
+  content: url("../images/eva-1x1.gif");
+}
+
+.patri__image:hover {
+  content: url("../images/patri-1x1.gif");
+}
+
 .who__name {
   margin: 0.9375rem 0 0 0;
   font-size: 1.25rem;
