@@ -341,10 +341,18 @@ body {
   line-height: 1.88;
 }
 
+.contact__subt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #54585a;
+  text-align: center;
+}
+
 .contact__text {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #54585a;
+  text-align: center;
 }
 
 .contact-form {
@@ -413,6 +421,10 @@ input::-webkit-input-placeholder {
   color: #b8b8b9;
 }
 
+input::-moz-placeholder {
+  color: #b8b8b9;
+}
+
 input:-ms-input-placeholder {
   color: #b8b8b9;
 }
@@ -426,6 +438,10 @@ input::placeholder {
 }
 
 #contact-form_message::-webkit-input-placeholder {
+  color: #b8b8b9;
+}
+
+#contact-form_message::-moz-placeholder {
   color: #b8b8b9;
 }
 
