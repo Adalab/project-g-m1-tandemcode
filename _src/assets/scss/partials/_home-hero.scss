@@ -1,0 +1,54 @@
+/* HERO CSS */
+
+.hero {
+  background-image: url(../images/tandem.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 421px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.39;
+  padding: 0.9375rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  transform: translatey(50%);
+}
+
+/* HERO MEDIA */
+
+@media all and (min-width: 21.75rem) {
+  .hero__text {
+    transform: translatey(45%);
+  }
+}
+
+@media all and (min-width: 48rem) {
+  .hero__text {
+    transform: translatey(0%);
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 60%;
+  }
+}
+
+@media all and (min-width: 75rem) {
+  .hero{
+    height: 550px; }
+  .hero__text {
+    transform: translatey(0%);
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 60%;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}

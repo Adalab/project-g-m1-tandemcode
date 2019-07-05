@@ -1,0 +1,127 @@
+/* HEADER CSS*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header-1 {
+  background-color: rgba(9, 157, 141, 0.95);
+  padding: 0.9375rem 0;
+  text-align: center;
+}
+
+.header-1__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.88;
+}
+
+.header__nav {
+  padding: 0.5rem 0 0.4375rem;
+  background: rgba(20, 217, 196, 0.9);
+}
+
+.header__nav-list {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.header__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1d0029;
+}
+.tandem-code__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* CSS HEADER MEDIA */
+
+@media all and (min-width: 48rem) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-1 {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .header__nav {
+    width: 50%;
+    padding: 0.9375rem 0 0;
+    background-color: rgba(9, 157, 141, 0.95);
+  }
+  .header__nav .container {
+    margin: 0 2.8125rem 0 0;
+  }
+  .header__link:hover {
+    color: #1d0029;
+  }
+  .header__nav-list {
+    justify-content: flex-end;
+  }
+  .header__nav-item{
+    padding-right: 18px;
+  }
+  .header__nav-item:last-child{
+    padding-right:0;
+  }
+}
+
+@media all and (min-width: 75rem) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-1 {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .header__nav {
+    width: 50%;
+    padding: 0.9375rem 0 0 0;
+    background-color: rgba(9, 157, 141, 0.95);
+  }
+  .header__nav .container {
+    margin: 0 2.8125rem 0 0;
+  }
+  .header-1 .container {
+    margin: 0 0 0 auto;
+    width: 28.875rem;
+  }
+  .header__nav .container {
+    margin: 0 auto 0 0;
+    width: 28.875rem;
+  }
+  .header__link:hover {
+    color: #1d0029;
+  }
+  .header__nav-list {
+    justify-content: flex-end;
+  }
+  .header__nav-item{
+    padding-right: 18px;
+  }
+  .header__nav-item:last-child{
+    padding-right:0;
+  }
+}
