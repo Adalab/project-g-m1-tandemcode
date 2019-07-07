@@ -37,6 +37,7 @@
   margin: auto;
 }
 .who__image {
+  box-sizing: border-box;
   width: 100%;
   border: solid 0.3125rem rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
@@ -72,7 +73,7 @@
 }
 
 .social-list {
-  margin: 0.9375rem auto 0 auto;
+  margin: 0.9375rem auto 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -131,11 +132,14 @@
     margin-right: 0;
     margin-left: 1.8125rem;
   }
+  .who__name {
+    margin: 0;
+  }
 }
 
 @media all and (min-width: 75rem) {
   .who-text {
-    max-width: 27.5rem;
+    max-width: 27.7rem;
   }
   .who__list-image {
     width: 17.375rem;
