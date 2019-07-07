@@ -271,10 +271,36 @@ body {
 .fab:hover,.fas:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-}/* FOOTER CSS */.footer {
+}
+
+.footer {
   font-family: "Open Sans", sans-serif;
   border-top: 0.0625rem solid #b8b8b9;
   padding: 1.875rem 0 2.8125rem 0;
+  height: 250px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 90px 1fr;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .footer__text {
@@ -288,7 +314,6 @@ body {
 .footer__nav {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1.25rem 0 1.875rem 0;
 }
 
 .footer__nav-list {
@@ -316,13 +341,13 @@ body {
 }
 
 .logo-ada {
-  width: 7.1875rem;
+  height: 45px;
   margin: 0 auto;
   background-color: white;
 }
 
 .logo-ada__img {
-  width: 100%;
+  height: 100%;
 }/* FOOTER MEDIA */.main__herocontact {
   background-image: url("../images/grupo.jpg");
   background-size: cover;
@@ -421,10 +446,6 @@ input::-webkit-input-placeholder {
   color: #b8b8b9;
 }
 
-input::-moz-placeholder {
-  color: #b8b8b9;
-}
-
 input:-ms-input-placeholder {
   color: #b8b8b9;
 }
@@ -438,10 +459,6 @@ input::placeholder {
 }
 
 #contact-form_message::-webkit-input-placeholder {
-  color: #b8b8b9;
-}
-
-#contact-form_message::-moz-placeholder {
   color: #b8b8b9;
 }
 
@@ -604,51 +621,37 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .footer {
-    height: 10.625rem;
-    padding: 1.875rem 0;
+    padding: 30px 0 60px 0;
+    height: 170px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  .footer-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 7.5rem;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35px 45px;
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   .footer__text {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
     text-align: left;
-    margin: 0 0 0.9375rem;
-    display: inline-block;
-    width: 50%;
-  }
-
-  .footer__nav {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-    padding: 0;
-    width: 50%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    bottom: 5.625rem;
   }
 
   .footer__nav-list,.footer__link {
@@ -657,9 +660,7 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .logo-ada {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+    text-align: left;
     margin: 0;
   }
 }
@@ -748,7 +749,10 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .footer {
-    height: 10rem;
+    padding: 30px 0 45px 0;
+    height: 160px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
