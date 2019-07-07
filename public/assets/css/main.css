@@ -421,6 +421,10 @@ input::-webkit-input-placeholder {
   color: #b8b8b9;
 }
 
+input::-moz-placeholder {
+  color: #b8b8b9;
+}
+
 input:-ms-input-placeholder {
   color: #b8b8b9;
 }
@@ -434,6 +438,10 @@ input::placeholder {
 }
 
 #contact-form_message::-webkit-input-placeholder {
+  color: #b8b8b9;
+}
+
+#contact-form_message::-moz-placeholder {
   color: #b8b8b9;
 }
 
