@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+a:focus {
+  outline: #1d0029 solid 2px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }/* Import de los partials*/.container {
