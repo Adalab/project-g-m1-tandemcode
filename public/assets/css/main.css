@@ -347,13 +347,23 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 421px;
-}
-
-.contact__title {
+  height: 300px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}/* CSS MEDIA HERO CONTACT 1200px*//* CSS DESCRIPTION*/.contact__title {
   text-align: center;
   font-family: "Rubik", sans-serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 500;
   color: #14d9c4;
   text-transform: uppercase;
@@ -362,19 +372,17 @@ body {
 
 .contact__subt {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   color: #54585a;
   text-align: center;
 }
 
 .contact__text {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   color: #54585a;
   text-align: center;
-}
-
-.contact-form {
+}/*CSS FORM*/.contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,6 +806,10 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
 
   .who__list-person {
     margin-bottom: 60px;
+  }
+
+  .main__herocontact {
+    height: 400px;
   }
 }
 
