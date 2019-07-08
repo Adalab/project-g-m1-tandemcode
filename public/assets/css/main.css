@@ -141,10 +141,6 @@ body {
   line-height: 24px;
 }
 
-.capacities-weak .text:last-child {
-  margin-bottom: 0px;
-}
-
 .rombo {
   width: 30px;
   height: 30px;
@@ -157,6 +153,7 @@ body {
 }/*TEAM SECTION CSS*//* CAPACITIES CSS */.capacities {
   text-align: center;
   background-color: rgba(184, 184, 185, 0.2);
+  padding: 30px 0 45px 0;
 }
 
 .str__title,.weak__title {
@@ -168,15 +165,15 @@ body {
 }
 
 .capacities-str {
-  padding-top: 30px;
   margin-bottom: 30px;
 }
 
-.capacities-weak {
-  padding-bottom: 45px;
+.weak-text:last-child {
+  margin-bottom: 0px;
 }/* CAPACITIES MEDIA *//* WHO CSS */.who {
   text-align: center;
   position: relative;
+  padding: 30px 0 45px 0;
 }
 
 .who__anchor-class {
@@ -186,9 +183,8 @@ body {
 }
 
 .who__title {
-  margin: 0;
+  margin: 0 0 30px 0;
   line-height: 45px;
-  padding: 30px;
   text-transform: uppercase;
   font-size: 24px;
   font-family: "Rubik", sans-serif;
@@ -205,6 +201,10 @@ body {
 
 .who__list-person {
   margin-bottom: 45px;
+}
+
+.who__list-person:last-child {
+  margin-bottom: 0;
 }
 
 .who__list-image {
@@ -286,7 +286,7 @@ body {
 .fab:hover,.fas:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-}/* FOOTER CSS */.footer {
+}/* MEDIA WHO SECTION *//* FOOTER CSS */.footer {
   font-family: "Open Sans", sans-serif;
   border-top: 0.0625rem solid #b8b8b9;
   padding: 1.875rem 0 2.8125rem 0;
@@ -588,7 +588,7 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
 
   .header__nav {
     width: 50%;
-    padding: 15px 0 0;
+    padding: 15px 0;
     background-color: rgba(9, 157, 141, 0.95);
   }
 
@@ -622,6 +622,10 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     color: #099d8d;
   }
 
+  .capacities {
+    padding: 45px 0 60px 0;
+  }
+
   .capacities .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,15 +640,30 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     width: 50%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    margin-right: 15px;
+    margin: 0 15px 0 0;
   }
 
   .capacities-weak {
     width: 50%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    padding-top: 30px;
     margin-left: 15px;
+  }
+
+  .str-text:last-child,.weak-text:last-child {
+    margin-bottom: 0px;
+  }
+
+  .who {
+    padding: 45px 0 60px 0;
+  }
+
+  .who__title {
+    margin-bottom: 40px;
+  }
+
+  .who__name {
+    margin-top: 0;
   }
 
   .who__anchor-class {

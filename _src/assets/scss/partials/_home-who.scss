@@ -3,6 +3,7 @@
 .who {
   text-align: center;
   position: relative;
+  padding: 30px 0 45px 0;
 }
 .who__anchor-class {
   position: absolute;
@@ -11,9 +12,8 @@
 }
 
 .who__title {
-  margin: 0;
+  margin: 0 0 30px 0;
   line-height:45px;
-  padding: 30px;
   text-transform: uppercase;
   font-size: 24px;
   font-family: "Rubik", sans-serif;
@@ -30,6 +30,10 @@
 
 .who__list-person {
   margin-bottom: 45px;
+}
+.who__list-person:last-child{
+  margin-bottom: 0;
+
 }
 
 .who__list-image {
@@ -100,7 +104,18 @@
   transform: scale(1.5);
 }
 
+/* MEDIA WHO SECTION */
+
 @media all and (min-width: 768px) {
+  .who{
+    padding: 45px 0 60px 0;
+  }
+  .who__title{
+    margin-bottom:40px;
+  }
+  .who__name{
+    margin-top:0;
+  }
   .who__anchor-class {
     top: -60px;
   }

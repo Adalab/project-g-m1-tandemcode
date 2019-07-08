@@ -36,9 +36,6 @@
   margin-bottom: 30px;
   line-height: 24px;
 }
-.capacities-weak .text:last-child{
-  margin-bottom: 0px;
-}
 
 .rombo {
   width: 30px;
@@ -66,6 +63,7 @@
 .capacities {
   text-align: center;
   background-color: rgba(184, 184, 185, 0.2);
+  padding: 30px 0 45px 0;
 }
 
 .str__title,
@@ -78,17 +76,19 @@
 }
 
 .capacities-str {
-  padding-top: 30px;
   margin-bottom: 30px;
 }
 
-.capacities-weak {
-  padding-bottom: 45px;
+.weak-text:last-child {
+  margin-bottom: 0px;
 }
-
 /* CAPACITIES MEDIA */
 
 @media all and (min-width: 768px) {
+  .capacities{
+    padding: 45px 0 60px 0;
+  }
+
   .capacities .container {
     display: flex;
     flex-direction: row;
@@ -96,12 +96,14 @@
   .capacities-str {
     width: 50%;
     box-sizing: content-box;
-    margin-right: 15px;
+    margin: 0 15px 0 0;
   }
   .capacities-weak {
     width: 50%;
     box-sizing: content-box;
-    padding-top: 30px;
     margin-left: 15px;
+  }
+  .str-text:last-child, .weak-text:last-child {
+    margin-bottom: 0px;
   }
 }
