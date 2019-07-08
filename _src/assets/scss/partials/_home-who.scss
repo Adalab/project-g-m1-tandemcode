@@ -7,14 +7,15 @@
 .who__anchor-class {
   position: absolute;
   left: 0;
-  top: -5rem;
+  top: -80px;
 }
 
 .who__title {
   margin: 0;
-  padding: 1.875rem;
+  line-height:45px;
+  padding: 30px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   color: #099d8d;
@@ -28,18 +29,19 @@
 }
 
 .who__list-person {
-  margin-bottom: 2.8125rem;
+  margin-bottom: 45px;
 }
 
 .who__list-image {
-  width: 11.25rem;
-  height: 11.25rem;
+  width: 180px;
+  height: 180px;
   margin: auto;
 }
 .who__image {
   width: 100%;
-  border: solid 0.3125rem rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 .andre__image:hover{
   content: url('../images/andre-1x1.gif');
@@ -58,8 +60,8 @@
 }
 
 .who__name {
-  margin: 0.9375rem 0 0 0;
-  font-size: 1.25rem;
+  margin: 15px 0 0 0;
+  font-size: 20px;
   font-weight: normal;
   line-height: 2.25;
 }
@@ -68,21 +70,22 @@
   margin: 0;
   color: #54585a;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .social-list {
-  margin: 0.9375rem auto 0 auto;
+  margin: 15px auto 0 auto;
   padding: 0;
   display: flex;
   justify-content: center;
   list-style: none;
+  padding:6px 0;
 }
 
 .social-list__icon:not(:last-child):after {
   content: "·";
-  font-size: 1rem;
-  margin-right: 0.3125rem;
+  font-size: 16px;
+  margin-right: 5px;
 }
 
 .social-list__link {
@@ -97,9 +100,9 @@
   transform: scale(1.5);
 }
 
-@media all and (min-width: 48rem) {
+@media all and (min-width: 768px) {
   .who__anchor-class {
-    top: -3.75rem;
+    top: -60px;
   }
   .who__list-person {
     display: flex;
@@ -121,25 +124,25 @@
 
   .who__list-image {
     margin: 0;
-    margin-right: 1.8125rem;
-    width: 12.8125rem;
-    min-width: 12.8125rem;
-    height: 12.8125rem;
+    margin-right: 29px;
+    width: 205px;
+    min-width: 205px;
+    height: 205px;
   }
 
   .who__list-person:nth-child(2n) .who__list-image {
     margin-right: 0;
-    margin-left: 1.8125rem;
+    margin-left: 29px;
   }
 }
 
-@media all and (min-width: 75rem) {
+@media all and (min-width: 1200px) {
   .who-text {
-    max-width: 27.5rem;
+    max-width: 440px;
   }
   .who__list-image {
-    width: 17.375rem;
-    min-width: 17.375rem;
-    height: 17.375rem;
+    width: 278px;
+    min-width: 278px;
+    height: 278px;
   }
 }
