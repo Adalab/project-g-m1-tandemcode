@@ -1,56 +1,67 @@
 <section class="form">
-    <div class="container__contact-form">
-        <form class="contact-form" action="/signup" method="post">
-          <label class="contact-form-label label_name" for="contact-form_name"
-            >Nombre completo <span>*</span></label
-          >
+  <div class="container__contact-form">
+    <p class="form-info">
+      Todos los campos marcados con <span class="asterisco"> * </span> son
+      obligatorios.
+    </p>
 
-          <input
-            class="contact-form-input"
-            id="contact-form_name"
-            type="text"
-            name="Nombre completo *"
-            placeholder="Nombre..."
-            required
-          />
+    <form class="contact-form" action="/signup" method="post">
+      <label class="contact-form-label label_name" for="contact-form_name"
+        >Nombre completo <span class="asterisco">*</span></label
+      >
 
-          <label class="contact-form-label" for="contact-form_email"
-            >Email <span>*</span></label
-          >
+      <input
+        class="contact-form-input"
+        id="contact-form_name"
+        type="text"
+        name="Nombre completo *"
+        placeholder="Nombre..."
+        required
+      />
 
-          <input
-            class="contact-form-input"
-            id="contact-form_email"
-            type="email"
-            name="Email"
-            placeholder="nombre.apellidos@mail.com"
-            required
-          />
+      <label class="contact-form-label" for="contact-form_email"
+        >Email <span class="asterisco">*</span></label
+      >
 
-          <label class="contact-form-label" for="contact-form_phone"
-            >Teléfono</label
-          >
+      <input
+        class="contact-form-input"
+        id="contact-form_email"
+        type="email"
+        name="Email"
+        placeholder="nombre.apellidos@mail.com"
+        required
+      />
 
-          <input
-            class="contact-form-input"
-            id="contact-form_phone"
-            type="tel"
-            name="Teléfono"
-            placeholder="Ej:123456789"
-          />
+      <label class="contact-form-label" for="contact-form_phone"
+        >Teléfono</label
+      >
 
-          <label class="contact-form-label" for="contact-form_message"
-            >Mensaje <span>*</span></label
-          >
+      <input
+        class="contact-form-input"
+        id="contact-form_phone"
+        type="tel"
+        name="Teléfono"
+        placeholder="Ej:123456789"
+      />
 
-          <textarea
-            id="contact-form_message"
-            name="Mensaje"
-            placeholder="¿Qué necesitas?"
-            required
-          ></textarea>
+      <label class="contact-form-label" for="contact-form_message"
+        >Mensaje <span class="asterisco">*</span></label
+      >
 
-          <input id="contact-form_button" type="submit" value="ENVIAR" />
-        </form>
-      </div>
+      <textarea
+        class="contact-form_message"
+        id="contact-form_message"
+        name="Mensaje"
+        placeholder="¿Qué necesitas?"
+        required
+      ></textarea>
+
+      <input
+        class="contact-form_button"
+        id="contact-form_button"
+        type="submit"
+        value="ENVIAR"
+      />
+    </form>
+  </div>
 </section>
