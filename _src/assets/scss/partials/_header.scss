@@ -89,6 +89,7 @@
     padding-right: 0;
   }
 }
+/* CSS MEDIA 1200px*/
 
 @media all and (min-width: 1200px) {
   .header {
@@ -101,7 +102,7 @@
   }
   .header__nav {
     width: 50%;
-    padding: 15px 0 0 0;
+    padding: 15px 0;
     background-color: rgba(9, 157, 141, 0.95);
   }
   .header__nav .container {

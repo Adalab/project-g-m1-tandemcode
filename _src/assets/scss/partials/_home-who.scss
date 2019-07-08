@@ -104,7 +104,7 @@
   transform: scale(1.5);
 }
 
-/* MEDIA WHO SECTION */
+/* MEDIA WHO SECTION 768px*/
 
 @media all and (min-width: 768px) {
   .who{
@@ -120,6 +120,7 @@
     top: -60px;
   }
   .who__list-person {
+    margin-bottom:65px;
     display: flex;
     text-align: left;
   }
@@ -150,6 +151,7 @@
     margin-left: 29px;
   }
 }
+/* WHO SECTION MEDIA 1200PX*/
 
 @media all and (min-width: 1200px) {
   .who-text {
@@ -159,5 +161,8 @@
     width: 278px;
     min-width: 278px;
     height: 278px;
+  }
+  .who__list-person{
+    margin-bottom: 60px;
   }
 }
