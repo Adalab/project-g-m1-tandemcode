@@ -107,6 +107,23 @@
 /* MEDIA WHO SECTION 768px*/
 
 @media all and (min-width: 768px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .grid-item1-odd{
+    grid-column: 1/3;
+  }
+  .grid-item2-odd{
+    grid-column: 3/7;
+  }
+  .grid-item1-even{
+    grid-column: 5/7;
+  }
+  .grid-item2-even{
+    grid-column: 1/5;
+  }
   .who{
     padding: 45px 0 60px 0;
   }
@@ -140,7 +157,7 @@
 
   .who__list-image {
     margin: 0;
-    margin-right: 29px;
+    // margin-right: 29px;
     width: 205px;
     min-width: 205px;
     height: 205px;
@@ -148,12 +165,29 @@
 
   .who__list-person:nth-child(2n) .who__list-image {
     margin-right: 0;
-    margin-left: 29px;
+    // margin-left: 29px;
   }
 }
 /* WHO SECTION MEDIA 1200PX*/
 
 @media all and (min-width: 1200px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 45px;
+  }
+  .grid-item1-odd{
+    grid-column: 1/3;
+  }
+  .grid-item2-odd{
+    grid-column: 3/6;
+  }
+  .grid-item1-even{
+    grid-column: 5/7;
+  }
+  .grid-item2-even{
+    grid-column: 2/5;
+  }
   .who-text {
     max-width: 440px;
   }
