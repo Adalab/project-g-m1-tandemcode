@@ -717,6 +717,10 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     text-align: left;
   }
 
+  .footer__nav {
+    margin: 0;
+  }
+
   .footer__nav-list,.footer__link {
     line-height: 2.14;
     text-align: right;
