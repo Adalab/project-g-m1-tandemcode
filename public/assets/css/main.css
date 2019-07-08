@@ -271,24 +271,29 @@ body {
 .fab:hover,.fas:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-}/* FOOTER CSS */.footer {
+}
+
+.footer {
   font-family: "Open Sans", sans-serif;
-  border-top: 0.0625rem solid #b8b8b9;
-  padding: 1.875rem 0 2.8125rem 0;
+  border-top: 1px solid #b8b8b9;
+  padding: 30px 0 45px 0;
+  height: 250px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .footer__text {
   text-align: center;
   font-size: 0.875rem;
   color: #b8b8b9;
-  margin: 0;
+  margin: 0 0 20px 0;
   line-height: 1.43;
 }
 
 .footer__nav {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1.25rem 0 1.875rem 0;
+  margin: 0 0 30px 0;
 }
 
 .footer__nav-list {
@@ -315,15 +320,16 @@ body {
   color: #1d0029;
 }
 
-.logo-ada {
-  width: 7.1875rem;
+.footer__logo-ada {
+  height: 45px;
   margin: 0 auto;
   background-color: white;
+  text-align: center;
 }
 
 .logo-ada__img {
-  width: 100%;
-}/* FOOTER MEDIA */.main__herocontact {
+  height: 100%;
+}/* FOOTER MEDIA 768px*//* FOOTER MEDIA 1200px*/.main__herocontact {
   background-image: url("../images/grupo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -607,66 +613,6 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     margin-right: 0;
     margin-left: 1.8125rem;
   }
-
-  .footer {
-    height: 10.625rem;
-    padding: 1.875rem 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .footer-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 7.5rem;
-  }
-
-  .footer__text {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
-    text-align: left;
-    margin: 0 0 0.9375rem;
-    display: inline-block;
-    width: 50%;
-  }
-
-  .footer__nav {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-    padding: 0;
-    width: 50%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    bottom: 5.625rem;
-  }
-
-  .footer__nav-list,.footer__link {
-    line-height: 2.14;
-    text-align: right;
-  }
-
-  .logo-ada {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    margin: 0;
-  }
 }
 
 @media all and (min-width: 75rem) {
@@ -751,13 +697,53 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     min-width: 17.375rem;
     height: 17.375rem;
   }
-
-  .footer {
-    height: 10rem;
-  }
 }
 
 @media all and (min-width: 768px) {
+  .footer {
+    padding: 30px 0 60px 0;
+    height: 170px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45px 45px;
+  }
+
+  .item1 {
+    grid-column: 1/2;
+  }
+
+  .item2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .item3 {
+    grid-column: 1/2;
+  }
+
+  .footer__text {
+    text-align: left;
+  }
+
+  .footer__nav {
+    margin: 0;
+  }
+
+  .footer__nav-list,.footer__link {
+    line-height: 2.14;
+    text-align: right;
+  }
+
+  .footer__logo-ada {
+    text-align: left;
+    margin: 0;
+  }
+
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -798,6 +784,13 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
 }
 
 @media all and (min-width: 1200px) {
+  .footer {
+    padding: 30px 0 45px 0;
+    height: 160px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
