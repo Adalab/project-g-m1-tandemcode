@@ -382,7 +382,22 @@ body {
   font-size: 16px;
   color: #54585a;
   text-align: center;
-}/*CSS FORM*/.contact-form {
+}/*CSS FORM*/.form * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.form-info {
+  margin: 58px 15px;
+  font-size: 12px;
+  white-space: pre;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +422,6 @@ body {
 }
 
 .label_name {
-  margin-top: 58px;
   margin-bottom: 7px;
 }
 
@@ -421,15 +435,14 @@ body {
   appearance: none;
 }
 
-#contact-form_message {
+.contact-form_message {
   width: 290px;
   height: 105px;
   border: solid 1px #b8b8b9;
-  padding-top: 11px;
-  padding-left: 15px;
+  padding: 11px 15px 15px;
 }
 
-#contact-form_button {
+.contact-form_button {
   width: 290px;
   height: 45px;
   border-radius: 4px;
@@ -440,7 +453,7 @@ body {
   text-align: center;
 }
 
-span {
+.asterisco {
   color: #14d9c4;
 }
 
@@ -460,19 +473,19 @@ input::placeholder {
   color: #b8b8b9;
 }
 
-#contact-form_message::-webkit-input-placeholder {
+.contact-form_message::-webkit-input-placeholder {
   color: #b8b8b9;
 }
 
-#contact-form_message:-ms-input-placeholder {
+.contact-form_message:-ms-input-placeholder {
   color: #b8b8b9;
 }
 
-#contact-form_message::-ms-input-placeholder {
+.contact-form_message::-ms-input-placeholder {
   color: #b8b8b9;
 }
 
-#contact-form_message::placeholder {
+.contact-form_message::placeholder {
   color: #b8b8b9;
 }/*A TOODOS LOS INPUT
 -webkit-appearance: none;
@@ -732,6 +745,44 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     margin-right: 0;
     margin-left: 29px;
   }
+
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .form-info {
+    text-align: center;
+  }
+
+  .contact-form-label {
+    width: 442px;
+    text-align: left;
+  }
+
+  .contact-form-input {
+    width: 442px;
+    height: 45px;
+  }
+
+  .contact-form_message {
+    width: 442px;
+    height: 105px;
+  }
+
+  .contact-form_button {
+    width: 206px;
+    height: 45px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
 }
 
 @media all and (min-width: 1200px) {
@@ -810,6 +861,23 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
 
   .main__herocontact {
     height: 400px;
+  }
+
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 601px;
+  }
+
+  .contact-form-input******* {
+    width: 395px;
   }
 }
 

@@ -10,12 +10,16 @@
       </p>
     </div>
     <form class="contact-form" action="/signup" method="post">
-      <label class="contact-form-label label_name" for="contact-form_name"
-        >Nombre completo <span>*</span></label
-      >
+      <p class="form-info">
+        Todos los campos marcados con <span class="asterisco"> * </span> son
+        obligatorios.
+      </p>
+      <label class="contact-form-label label_name" for="contact-form_name">
+        Nombre completo <span class="asterisco">*</span>
+      </label>
 
       <input
-        class="contact-form-input"
+        class="contact-form-input contact-form_name"
         id="contact-form_name"
         type="text"
         name="Nombre completo *"
@@ -23,12 +27,12 @@
         required
       />
 
-      <label class="contact-form-label" for="contact-form_email"
-        >Email <span>*</span></label
-      >
+      <label class="contact-form-label" for="contact-form_email">
+        Email <span class="asterisco">*</span>
+      </label>
 
       <input
-        class="contact-form-input"
+        class="contact-form-input contact-form_email"
         id="contact-form_email"
         type="email"
         name="Email"
@@ -36,30 +40,38 @@
         required
       />
 
-      <label class="contact-form-label" for="contact-form_phone"
-        >Teléfono</label
-      >
+      <label class="contact-form-label" for="contact-form_phone">
+        Teléfono
+      </label>
 
       <input
-        class="contact-form-input"
+        class="contact-form-input contact-form_phone"
         id="contact-form_phone"
         type="tel"
         name="Teléfono"
         placeholder="Ej:123456789"
       />
 
-      <label class="contact-form-label" for="contact-form_message"
-        >Mensaje <span>*</span></label
-      >
+      <label class="contact-form-label" for="contact-form_message">
+        Mensaje
+        <span class="asterisco">*</span>
+      </label>
 
       <textarea
+        class="contact-form_message"
         id="contact-form_message"
         name="Mensaje"
         placeholder="¿Qué necesitas?"
         required
-      ></textarea>
+      >
+      </textarea>
 
-      <input id="contact-form_button" type="submit" value="ENVIAR" />
+      <input
+        class="contact-form_button"
+        id="contact-form_button"
+        type="submit"
+        value="ENVIAR"
+      />
     </form>
   </div>
 </section>

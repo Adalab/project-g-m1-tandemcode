@@ -23,6 +23,19 @@ font-family: "Open Sans", sans-serif;
 }
 
 /*CSS FORM*/
+.form * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.form-info {
+  margin: 58px 15px;
+  font-size: 12px;
+  white-space: pre;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
 
 .contact-form {
   display: flex;
@@ -42,7 +55,6 @@ font-family: "Open Sans", sans-serif;
 }
 
 .label_name {
-  margin-top: 58px;
   margin-bottom: 7px;
 }
 
@@ -56,15 +68,14 @@ font-family: "Open Sans", sans-serif;
   appearance: none;
 }
 
-#contact-form_message {
+.contact-form_message {
   width: 290px;
   height: 105px;
   border: solid 1px #b8b8b9;
-  padding-top: 11px;
-  padding-left: 15px;
+  padding: 11px 15px 15px;
 }
 
-#contact-form_button {
+.contact-form_button {
   width: 290px;
   height: 45px;
   border-radius: 4px;
@@ -75,7 +86,7 @@ font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
-span {
+.asterisco {
   color: #14d9c4;
 }
 
@@ -83,10 +94,60 @@ input::placeholder {
   color: #b8b8b9;
 }
 
-#contact-form_message::placeholder {
+.contact-form_message::placeholder {
   color: #b8b8b9;
 }
+
 /*A TOODOS LOS INPUT
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;*/
+
+@media all and (min-width: 768px) {
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+  }
+
+  .form-info {
+    text-align: center;
+  }
+
+  .contact-form-label {
+    width: 442px;
+    text-align: left;
+  }
+
+  .contact-form-input {
+    width: 442px;
+    height: 45px;
+  }
+
+  .contact-form_message {
+    width: 442px;
+    height: 105px;
+  }
+  .contact-form_button {
+    width: 206px;
+    height: 45px;
+    align-self: flex-end;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form {
+    width: 601px;
+  }
+
+  .contact-form-input******* {
+    width: 395px;
+  }
+}
