@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+a:focus {
+  outline: #1d0029 solid 2px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }/* Import de los partials*/.container {
@@ -115,7 +119,7 @@ body {
   line-height: 1.88;
   text-transform: uppercase;
   margin-bottom: 0.9375rem;
-  margin-top: 1.875rem;
+  margin-top: 3.375rem;
 }
 
 .team-desc__article {
@@ -755,12 +759,6 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
 
   .footer {
     height: 10rem;
-  }
-}
-
-@media all and (max-width: 21.6875rem) {
-  .team__title {
-    margin-top: 3.375rem;
   }
 }
 

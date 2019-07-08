@@ -19,7 +19,7 @@
   line-height: 1.88;
   text-transform: uppercase;
   margin-bottom: 0.9375rem;
-  margin-top: 1.875rem;
+  margin-top: 3.375rem;
 }
 
 .team-desc__article {
@@ -48,12 +48,6 @@
 }
 
 /*TEAM SECTION CSS*/
-
-@media all and (max-width: 21.6875rem) {
-  .team__title {
-    margin-top: 3.375rem;
-  }
-}
 
 @media all and (min-width: 48rem) {
   .team__anchor-class {
