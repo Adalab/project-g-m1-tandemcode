@@ -109,7 +109,7 @@
 @media all and (min-width: 768px) {
   .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 88px 88px 88px 88px 88px 88px;
     grid-gap: 30px;
   }
   .grid-item1-odd{
@@ -173,7 +173,7 @@
 @media all and (min-width: 1200px) {
   .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 116.5px 116.5px 116.5px 116.5px 116.5px 116.5px;
     grid-gap: 45px;
   }
   .grid-item1-odd{
