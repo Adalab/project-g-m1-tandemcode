@@ -81,11 +81,10 @@ appearance: none;*/
   .form {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .contact-form {
-    display: flex;
-    align-items: center;
   }
 
   .form-info {
@@ -110,5 +109,19 @@ appearance: none;*/
     width: 206px;
     height: 45px;
     align-self: flex-end;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form {
+    width: 601px;
+  }
+
+  .contact-form-input******* {
+    width: 395px;
   }
 }

@@ -765,12 +765,6 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-
-  .contact-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -800,6 +794,25 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     height: 45px;
     -ms-flex-item-align: end;
     align-self: flex-end;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 601px;
+  }
+
+  .contact-form-input******* {
+    width: 395px;
   }
 }
 
