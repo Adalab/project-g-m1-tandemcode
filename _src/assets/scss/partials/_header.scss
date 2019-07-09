@@ -12,6 +12,7 @@
   background-color: rgba(9, 157, 141, 0.95);
   padding: 15px 0;
   text-align: center;
+  position: relative;
 }
 
 .header-1__title {
@@ -22,9 +23,11 @@
   text-transform: uppercase;
   line-height: 1.88;
   display: block;
-  text-align: right;
+  text-align: left;
   background-image: url(../images/bicis_blanco.png);
-
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__nav {
