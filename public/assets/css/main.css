@@ -124,7 +124,7 @@
 .rombo {
   width: 1.875rem;
   height: 1.875rem;
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -193,7 +193,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  border: solid 0.3125rem rgba(0, 0, 0, 0.08);
+  border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
 }
 
@@ -263,7 +263,7 @@
   transform: scale(1.5);
 }/* FOOTER CSS */.footer {
   font-family: "Open Sans", sans-serif;
-  border-top: 0.0625rem solid #b8b8b9;
+  border-top: 1px solid #b8b8b9;
   padding: 1.875rem 0 2.8125rem 0;
 }
 
@@ -308,17 +308,17 @@
 .logo-ada {
   width: 7.1875rem;
   margin: 0 auto;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .logo-ada__img {
   width: 100%;
 }/* FOOTER MEDIA */.main__herocontact {
-  background-image: url("../images/grupo.jpg");
+  background-image: url(../images/grupo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 421px;
+  height: 18.75rem;
 }
 
 .contact__title {
@@ -557,59 +557,6 @@ body {
     margin-left: 0.9375rem;
   }
 
-  .who__anchor-class {
-    top: -3.75rem;
-  }
-
-  .who__list-person {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: left;
-  }
-
-  .who__list-person:nth-child(2n) {
-    text-align: right;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-
-  .who__list-person:nth-child(2n) .who__list-image {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  .social-list {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .who__list-person:nth-child(2n) .social-list {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-
-  .who__list-image {
-    margin: 0;
-    margin-right: 1.8125rem;
-    width: 12.8125rem;
-    min-width: 12.8125rem;
-    height: 12.8125rem;
-  }
-
-  .who__list-person:nth-child(2n) .who__list-image {
-    margin-right: 0;
-    margin-left: 1.8125rem;
-  }
-
-  .who__name {
-    margin: 0;
-  }
-
   .footer {
     height: 10.625rem;
     padding: 1.875rem 0;
@@ -744,18 +691,77 @@ body {
     line-height: 1.25;
   }
 
+  .footer {
+    height: 10rem;
+  }
+
+  .main__herocontact {
+    height: 25rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .who__anchor-class {
+    top: -3.75rem;
+  }
+
+  .who__list-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+
+  .who__list-person:nth-child(2n) {
+    text-align: right;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .who__list-person:nth-child(2n) .who__list-image {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .social-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .who__list-person:nth-child(2n) .social-list {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .who__list-image {
+    margin: 0;
+    margin-right: 1.8125rem;
+    width: 12.8125rem;
+    min-width: 12.8125rem;
+  }
+
+  .who__list-person:nth-child(2n) .who__list-image {
+    margin-right: 0;
+    margin-left: 1.8125rem;
+  }
+
+  .who__name {
+    margin: 0;
+  }
+}
+
+@media all and (min-width: 1200px) {
   .who-text {
-    max-width: 27.7rem;
+    max-width: 27.625rem;
   }
 
   .who__list-image {
     width: 17.375rem;
     min-width: 17.375rem;
-    height: 17.375rem;
-  }
-
-  .footer {
-    height: 10rem;
   }
 }
 

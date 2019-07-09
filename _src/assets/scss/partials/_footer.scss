@@ -1,22 +1,22 @@
 /* FOOTER CSS */
 
 .footer {
-  font-family: "Open Sans", sans-serif;
-  border-top: 0.0625rem solid #b8b8b9;
-  padding: 1.875rem 0 2.8125rem 0;
+  font-family: $tf-open;
+  border-top: 1px solid $grey-light;
+  padding: rem(30px) 0 rem(45px) 0;
 }
 
 .footer__text {
   text-align: center;
-  font-size: 0.875rem;
-  color: #b8b8b9;
+  font-size: rem(14px);
+  color: $grey-light;
   margin: 0;
   line-height: 1.43;
 }
 
 .footer__nav {
   box-sizing: border-box;
-  padding: 1.25rem 0 1.875rem 0;
+  padding: rem(20px) 0 rem(30px) 0;
 }
 
 .footer__nav-list {
@@ -24,9 +24,9 @@
   padding: 0;
   margin: 0;
   line-height: 1.43;
-  font-size: 0.875rem;
+  font-size: rem(14px);
   font-weight: 500;
-  color: #54585a;
+  color: $color-text;
   text-transform: uppercase;
   text-align: center;
   opacity: 0.75;
@@ -39,13 +39,13 @@
   font-weight: 500;
 }
 .footer__link:hover {
-  color: #1d0029;
+  color: $color-link-hover;
 }
 
 .logo-ada {
-  width: 7.1875rem;
+  width: rem(115px);
   margin: 0 auto;
-  background-color: white;
+  background-color:$white;
 }
 
 .logo-ada__img {
@@ -54,10 +54,10 @@
 
 /* FOOTER MEDIA */
 
-@media all and (min-width: 48rem) {
+@media all and (min-width: rem(768px)) {
   .footer {
-    height: 10.625rem;
-    padding: 1.875rem 0;
+    height: rem(170px);
+    padding: rem(30px) 0;
     box-sizing: border-box;
   }
   .footer-flex {
@@ -66,12 +66,12 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     box-sizing: border-box;
-    height: 7.5rem;
+    height: rem(120px);
   }
   .footer__text {
     order: 0;
     text-align: left;
-    margin: 0 0 0.9375rem;
+    margin: 0 0 rem(15px);
     display: inline-block;
     width: 50%;
   }
@@ -81,7 +81,7 @@
     width: 50%;
     box-sizing: border-box;
     align-self: flex-end;
-    bottom: 5.625rem;
+    bottom: rem(90px);
   }
   .footer__nav-list,
   .footer__link {
@@ -94,8 +94,8 @@
   }
 }
 
-@media all and (min-width: 75rem) {
+@media all and (min-width: rem(1200px)) {
   .footer {
-    height: 10rem;
+    height: rem(160px);
   }
 }

@@ -1,6 +1,7 @@
 /* HERO CSS */
 
 .hero {
+  background-image: url(../images/tandem.jpeg);
   @include bg-img();
   height: rem(421px);
   position: relative;

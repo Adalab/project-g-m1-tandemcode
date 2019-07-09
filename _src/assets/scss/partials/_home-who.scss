@@ -7,40 +7,40 @@
 .who__anchor-class {
   position: absolute;
   left: 0;
-  top: -5rem;
+  top: rem(-80px);
 }
 
 .who__title {
   margin: 0;
-  padding: 1.875rem;
+  padding: rem(30px);
   text-transform: uppercase;
-  font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
+  font-size: rem(24px);
+  font-family: $tf-rubik;
   font-weight: 700;
-  color: #099d8d;
+  color: $color-title-d;
 }
 
 .who__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: $tf-open;
 }
 
 .who__list-person {
-  margin-bottom: 2.8125rem;
+  margin-bottom: rem(45px);
 }
 
 .who__list-image {
-  width: 11.25rem;
-  height: 11.25rem;
+  width: rem(180px);
+  height: rem(180px);
   margin: auto;
 }
 .who__image {
   box-sizing: border-box;
   width: 100%;
-  border: solid 0.3125rem rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  border-radius: rem(4px);
 }
 .andre__image:hover{
   content: url('../images/andre-1x1.gif');
@@ -59,21 +59,21 @@
 }
 
 .who__name {
-  margin: 0.9375rem 0 0 0;
-  font-size: 1.25rem;
+  margin: rem(15px) 0 0 0;
+  font-size: rem(20px);
   font-weight: normal;
   line-height: 2.25;
 }
 
 .who-text {
   margin: 0;
-  color: #54585a;
+  color: $color-text;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: rem(16px);
 }
 
 .social-list {
-  margin: 0.9375rem auto 0;
+  margin: rem(15px) auto 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -82,25 +82,25 @@
 
 .social-list__icon:not(:last-child):after {
   content: "·";
-  font-size: 1rem;
-  margin-right: 0.3125rem;
+  font-size: rem(16px);
+  margin-right: rem(5px);
 }
 
 .social-list__link {
   text-decoration: none;
-  color: #099d8d;
+  color: $color-title-d;
 }
 .social-list__link:hover {
-  color:#1d0029;
+  color: $color-link-hover;
 }
 .fab:hover,
 .fas:hover {
   transform: scale(1.5);
 }
 
-@media all and (min-width: 48rem) {
+@media all and (min-width: 768px) {
   .who__anchor-class {
-    top: -3.75rem;
+    top: rem(-60px);
   }
   .who__list-person {
     display: flex;
@@ -122,28 +122,26 @@
 
   .who__list-image {
     margin: 0;
-    margin-right: 1.8125rem;
-    width: 12.8125rem;
-    min-width: 12.8125rem;
-    height: 12.8125rem;
+    margin-right: rem(29px);
+    width: rem(205px);
+    min-width: rem(205px);
   }
 
   .who__list-person:nth-child(2n) .who__list-image {
     margin-right: 0;
-    margin-left: 1.8125rem;
+    margin-left: rem(29px);
   }
   .who__name {
     margin: 0;
   }
 }
 
-@media all and (min-width: 75rem) {
+@media all and (min-width: 1200px) {
   .who-text {
-    max-width: 27.7rem;
+    max-width: rem(442px);
   }
   .who__list-image {
-    width: 17.375rem;
-    min-width: 17.375rem;
-    height: 17.375rem;
+    width: rem(278px);
+    min-width: rem(278px);
   }
 }
