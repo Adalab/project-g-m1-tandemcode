@@ -47,7 +47,7 @@
   transform: translate(-50%, 50%) rotate(45deg);
 }
 
-/*TEAM SECTION CSS*/
+/*TEAM SECTION MEDIA 768px*/
 
 @media all and (min-width: rem(768px)) {
   .team__anchor-class {
@@ -58,11 +58,13 @@
   }
 }
 
+
 /* CAPACITIES CSS */
 
 .capacities {
   text-align: center;
   background-color: rgba(184, 184, 185, 0.2);
+  padding: 30px 0 45px 0;
 }
 
 .str__title,
@@ -84,7 +86,13 @@
   padding-bottom: rem(45px);
 }
 
-/* CAPACITIES MEDIA */
+/* CAPACITIES MEDIA 768PX*/
+
+@media all and (min-width: rem(768px)) {
+  .capacities{
+    padding: 45px 0 60px 0;
+  }
+}
 
 @media all and (min-width: rem(768px)) {
   .capacities .container {
@@ -99,7 +107,10 @@
   .capacities-weak {
     width: 50%;
     box-sizing: content-box;
-    padding-top: rem(30px);
     margin-left: rem(15px);
   }
+  .str-text:last-child, .weak-text:last-child {
+    margin-bottom: 0;
+  }
 }
+/* CAPACITIES 1200px MEDIA*/

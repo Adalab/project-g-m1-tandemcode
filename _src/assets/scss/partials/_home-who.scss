@@ -3,6 +3,7 @@
 .who {
   text-align: center;
   position: relative;
+  padding: 30px 0 45px 0;
 }
 .who__anchor-class {
   position: absolute;
@@ -11,11 +12,11 @@
 }
 
 .who__title {
-  margin: 0;
-  padding: rem(30px);
+  margin: 0 0 rem(30px) 0;
+  line-height: rem(45px);
   text-transform: uppercase;
   font-size: rem(24px);
-  font-family: $tf-rubik;
+  font-family: "Rubik", sans-serif;
   font-weight: 700;
   color: $color-title-d;
 }
@@ -41,6 +42,7 @@
   width: 100%;
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: rem(4px);
+  box-sizing: border-box;
 }
 .andre__image:hover{
   content: url('../images/andre-1x1.gif');
@@ -78,6 +80,7 @@
   display: flex;
   justify-content: center;
   list-style: none;
+  padding:6px 0;
 }
 
 .social-list__icon:not(:last-child):after {
@@ -103,6 +106,7 @@
     top: rem(-60px);
   }
   .who__list-person {
+    margin-bottom:65px;
     display: flex;
     text-align: left;
   }
@@ -124,6 +128,7 @@
     margin: 0;
     margin-right: rem(29px);
     width: rem(205px);
+    height: rem(205px);
     min-width: rem(205px);
   }
 
@@ -135,6 +140,7 @@
     margin: 0;
   }
 }
+/* WHO SECTION MEDIA 1200PX*/
 
 @media all and (min-width: 1200px) {
   .who-text {

@@ -6,4 +6,10 @@
       height: rem(400px);
     }
 }
+/* CSS MEDIA HERO CONTACT 1200px*/
 
+@media all and (min-width: 1200px) {
+  .main__herocontact {
+    height: 400px;
+  }
+}

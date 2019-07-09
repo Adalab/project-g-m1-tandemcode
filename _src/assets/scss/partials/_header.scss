@@ -25,7 +25,7 @@
 }
 
 .header__nav-list {
-  font-size: rem(14px);
+  font-size: rem(15px);
   font-weight: 700;
   text-transform: uppercase;
   color: $color-header-title;
@@ -44,6 +44,9 @@
 
 .header__link:hover, .tandem-code__link:hover {
   color:$color-link-hover;
+}
+.tandem-code__link:hover {
+  color: #1d0029;
 }
 
 
@@ -75,10 +78,11 @@
   .header__nav-item{
     padding-right: rem(18px);
   }
-  .header__nav-item:last-child{
-    padding-right:0;
+  .header__nav-item:last-child {
+    padding-right: 0;
   }
 }
+/* CSS MEDIA 1200px*/
 
 @media all and (min-width: rem(1200px)) {
   .header {
@@ -114,7 +118,7 @@
   .header__nav-item{
     padding-right: rem(18px);
   }
-  .header__nav-item:last-child{
-    padding-right:0;
+  .header__nav-item:last-child {
+    padding-right: 0;
   }
 }
