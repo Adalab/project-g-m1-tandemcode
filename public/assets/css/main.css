@@ -223,7 +223,6 @@ body {
   width: 100%;
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -262,11 +261,7 @@ body {
 }
 
 .social-list {
-<<<<<<< HEAD
-  margin: 0.9375rem auto 0;
-=======
   margin: 15px auto 0 auto;
->>>>>>> globalcheck
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,15 +464,7 @@ body {
   color: #b8b8b9;
 }
 
-<<<<<<< HEAD
-input::-moz-placeholder {
-  color: #b8b8b9;
-}
-
-input:-ms-input-placeholder {
-=======
 .contact-form-input:-ms-input-placeholder {
->>>>>>> globalcheck
   color: #b8b8b9;
 }
 
@@ -495,15 +482,7 @@ input:-ms-input-placeholder {
   font-size: 14px;
 }
 
-<<<<<<< HEAD
-#contact-form_message::-moz-placeholder {
-  color: #b8b8b9;
-}
-
-#contact-form_message:-ms-input-placeholder {
-=======
 .contact-form_message:-ms-input-placeholder {
->>>>>>> globalcheck
   color: #b8b8b9;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -862,11 +841,7 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .who-text {
-<<<<<<< HEAD
-    max-width: 27.7rem;
-=======
     max-width: 440px;
->>>>>>> globalcheck
   }
 
   .who__list-image {
