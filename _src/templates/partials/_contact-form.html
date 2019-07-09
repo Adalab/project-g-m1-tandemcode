@@ -1,56 +1,77 @@
 <section class="form">
-    <div class="container__contact-form">
-        <form class="contact-form" action="/signup" method="post">
-          <label class="contact-form-label label_name" for="contact-form_name"
-            >Nombre completo <span>*</span></label
-          >
+  <div class="container">
+    <div class="contactdesc">
+      <h1 class="contact__title">Contacto</h1>
+      <p class="contact__subt">Pedaleando juntas llegamos más lejos.</p>
+      <p class="contact__text">
+        Si has llegado hasta aquí puedes tener dudas sin resolver o por supuesto
+        puedes querer contratarnos. En cualquier caso, no dudes en ponerte en
+        contacto con nosotras, estaremos encantadas de atenderte.
+      </p>
+    </div>
+    <form class="contact-form" action="/signup" method="post">
+      <p class="form-info">
+        Todos los campos marcados con <span class="asterisco"> * </span> son
+        obligatorios.
+      </p>
+      <label class="contact-form-label label_name" for="contact-form_name">
+        Nombre completo <span class="asterisco">*</span>
+      </label>
 
-          <input
-            class="contact-form-input"
-            id="contact-form_name"
-            type="text"
-            name="Nombre completo *"
-            placeholder="Nombre..."
-            required
-          />
+      <input
+        class="contact-form-input contact-form_name"
+        id="contact-form_name"
+        type="text"
+        name="Nombre completo *"
+        placeholder="Nombre..."
+        required
+      />
 
-          <label class="contact-form-label" for="contact-form_email"
-            >Email <span>*</span></label
-          >
+      <label class="contact-form-label" for="contact-form_email">
+        Email <span class="asterisco">*</span>
+      </label>
 
-          <input
-            class="contact-form-input"
-            id="contact-form_email"
-            type="email"
-            name="Email"
-            placeholder="nombre.apellidos@mail.com"
-            required
-          />
+      <input
+        class="contact-form-input contact-form_email"
+        id="contact-form_email"
+        type="email"
+        name="Email"
+        placeholder="nombre.apellidos@mail.com"
+        required
+      />
 
-          <label class="contact-form-label" for="contact-form_phone"
-            >Teléfono</label
-          >
+      <label class="contact-form-label" for="contact-form_phone">
+        Teléfono
+      </label>
 
-          <input
-            class="contact-form-input"
-            id="contact-form_phone"
-            type="tel"
-            name="Teléfono"
-            placeholder="Ej:123456789"
-          />
+      <input
+        class="contact-form-input contact-form_phone"
+        id="contact-form_phone"
+        type="tel"
+        name="Teléfono"
+        placeholder="Ej:123456789"
+      />
 
-          <label class="contact-form-label" for="contact-form_message"
-            >Mensaje <span>*</span></label
-          >
+      <label class="contact-form-label" for="contact-form_message">
+        Mensaje
+        <span class="asterisco">*</span>
+      </label>
 
-          <textarea
-            id="contact-form_message"
-            name="Mensaje"
-            placeholder="¿Qué necesitas?"
-            required
-          ></textarea>
+      <textarea
+        class="contact-form_message"
+        id="contact-form_message"
+        name="Mensaje"
+        placeholder="¿Qué necesitas?"
+        required
+      >
+      </textarea>
 
-          <input id="contact-form_button" type="submit" value="ENVIAR" />
-        </form>
-      </div>
+      <input
+        class="contact-form_button"
+        id="contact-form_button"
+        type="submit"
+        value="ENVIAR"
+      />
+    </form>
+  </div>
 </section>
