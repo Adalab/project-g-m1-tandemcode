@@ -1,8 +1,8 @@
 /* CSS DESCRIPTION*/
 .form {
-    padding: 30px 0 60px 0;
-    margin: 0;
-  }
+  padding: 30px 0 60px 0;
+  margin: 0;
+}
 
 .contact__title {
   text-align: center;
@@ -12,10 +12,10 @@
   color: #099d8d;
   text-transform: uppercase;
   line-height: 1.88;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 .contact__subt {
-font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #54585a;
   text-align: center;
@@ -31,7 +31,6 @@ font-family: "Open Sans", sans-serif;
 
 /*CSS FORM*/
 
-
 .form-info {
   margin: 58px 0;
   font-size: 12px;
@@ -44,13 +43,15 @@ font-family: "Open Sans", sans-serif;
 .contact-form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-content: center;
 }
 
 .contact-form-label {
+  display: block;
   color: #54585a;
   font-size: 14px;
-  margin-top:13px;
+  margin-top: 13px;
   margin-bottom: 7px;
   text-align: left;
 }
@@ -64,6 +65,11 @@ font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.form-wrapper-email-phone {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form_message {
@@ -104,14 +110,8 @@ font-family: "Open Sans", sans-serif;
 appearance: none;*/
 
 @media all and (min-width: 768px) {
-  .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .form-info {
-    text-align: center;
+  .form-wrapper-email-phone {
+    flex-direction: column;
   }
 
   .contact-form-label {
@@ -136,15 +136,38 @@ appearance: none;*/
 }
 
 @media all and (min-width: 1200px) {
-  .form {
-    display: flex;
-    justify-content: center;
+  .form-wrapper-email-phone {
+    flex-direction: row;
   }
+
   .contact-form {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .contact-form-input {
+  }
+
+  .contact-form-label {
+    width: 131px;
+  }
+
+  .contact-form_name {
     width: 601px;
   }
 
-  .contact-form-input{
+  .contact-form_email {
     width: 395px;
+    margin-right: 44px;
+  }
+
+  .contact-form_phone {
+    width: 162px;
+    display: block;
+  }
+
+  .contact-form_message {
+    width: 601px;
+    height: 105px;
   }
 }

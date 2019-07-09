@@ -413,11 +413,14 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-line-pack: center;
   align-content: center;
 }
 
 .contact-form-label {
+  display: block;
   color: #54585a;
   font-size: 14px;
   margin-top: 13px;
@@ -435,6 +438,16 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.form-wrapper-email-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .contact-form_message {
@@ -741,20 +754,11 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     margin: 0;
   }
 
-  .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .form-info {
-    text-align: center;
+  .form-wrapper-email-phone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .contact-form-label {
@@ -865,21 +869,44 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
     height: 400px;
   }
 
-  .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  .form-wrapper-email-phone {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .contact-form-label {
+    width: 131px;
+  }
+
+  .contact-form_name {
     width: 601px;
   }
 
-  .contact-form-input {
+  .contact-form_email {
     width: 395px;
+    margin-right: 44px;
+  }
+
+  .contact-form_phone {
+    width: 162px;
+    display: block;
+  }
+
+  .contact-form_message {
+    width: 601px;
+    height: 105px;
   }
 }
 
