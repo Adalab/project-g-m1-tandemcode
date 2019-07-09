@@ -1,29 +1,31 @@
 .footer {
-  font-family: "Open Sans", sans-serif;
-  border-top: 1px solid #b8b8b9;
-  padding: 30px 0 45px 0;
-  height: 250px;
-  box-sizing: border-box;
+  font-family: $tf-open;
+  border-top: 1px solid $grey-light;
+  padding: rem(30px) 0 rem(45px) 0;
+  //height: 250px;
+  //box-sizing: border-box;
 }
 .footer__text {
   text-align: center;
-  font-size: 0.875rem;
-  color: #b8b8b9;
-  margin: 0 0 20px 0;
+  font-size: rem(14px);
+  color: $grey-light;
+  margin: 0;
+  //margin: 0 0 20px 0;
   line-height: 1.43;
 }
 .footer__nav {
   box-sizing: border-box;
-  margin: 0 0 30px 0;
+  padding: rem(20px) 0 rem(30px) 0;
+  //margin: 0 0 30px 0;
 }
 .footer__nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
   line-height: 1.43;
-  font-size: 0.875rem;
+  font-size: rem(14px);
   font-weight: 500;
-  color: #54585a;
+  color: $color-text;
   text-transform: uppercase;
   text-align: center;
   opacity: 0.75;
@@ -35,12 +37,14 @@
   font-weight: 500;
 }
 .footer__link:hover {
-  color: #1d0029;
+  color: $color-link-hover;
 }
+
 .footer__logo-ada {
-  height:45px;
+  //width: rem(115px);
+  height: rem(45px);
   margin: 0 auto;
-  background-color: white;
+  background-color: $white;
   text-align: center;
 }
 .logo-ada__img {
@@ -48,49 +52,49 @@
 }
 
 /* FOOTER MEDIA 768px*/
-@media all and (min-width: 768px) {
+@media all and (min-width: rem(768px)) {
   .footer{
-  padding: 30px 0 60px 0;
-  height: 170px;
-  box-sizing: border-box;
-}
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 45px 45px;
-}
-.item1 {
-  grid-column: 1/2;
-}
-.item2 {
-  grid-column: 2/3;
-  grid-row: 1/3;
-}
-.item3 {
-  grid-column: 1/2;
-}
-.footer__text {
-  text-align: left;
-}
-.footer__nav{
-  margin: 0;
-}
-.footer__nav-list,
-.footer__link {
-  line-height: 2.14;
-  text-align: right;
-}
-.footer__logo-ada{
-  text-align: left;
-  margin: 0;
-}
+    padding: rem(30px) 0 rem(60px) 0;
+    height: rem(170px);
+    box-sizing: border-box;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: rem(45px) rem(45px);
+  }
+  .item1 {
+    grid-column: 1/2;
+  }
+  .item2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .item3 {
+    grid-column: 1/2;
+  }
+  .footer__text {
+    text-align: left;
+  }
+  .footer__nav{
+    margin: 0;
+  }
+  .footer__nav-list,
+  .footer__link {
+    line-height: 2.14;
+    text-align: right;
+  }
+  .footer__logo-ada{
+    text-align: left;
+    margin: 0;
+  }
 }
 
 /* FOOTER MEDIA 1200px*/
-@media all and (min-width: 1200px) {
+@media all and (min-width: rem(1200px)) {
   .footer{
-  padding: 30px 0 45px 0;
-  height: 160px;
-  box-sizing: border-box;
-}
+    padding: rem(30px) 0 rem(45px) 0;
+    height: rem(160px);
+    box-sizing: border-box;
+  }
 }
