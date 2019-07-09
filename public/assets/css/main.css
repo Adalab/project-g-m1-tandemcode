@@ -1,15 +1,4 @@
-@charset "UTF-8";/* GENERAL CSS */* {
-  padding: 0;
-  margin: 0;
-}
-
-a:focus {
-  outline: #1d0029 solid 2px;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}/* Import de los partials*/.container {
+@charset "UTF-8";/* Import de los partials*//*colors*//*text*/.container {
   margin: 0 0.9375rem;
 }/* CONTAINER @MEDIA *//* HEADER CSS*/.header {
   position: fixed;
@@ -58,24 +47,19 @@ body {
   text-align: center;
 }
 
-.header__link {
+.header__link,.tandem-code__link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.header__link:hover {
+.header__link:hover,.tandem-code__link:hover {
   color: #1d0029;
-}
-
-.tandem-code__link {
-  text-decoration: none;
-  color: #ffffff;
 }/* CSS HEADER MEDIA *//* HERO CSS */.hero {
   background-image: url(../images/tandem.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 421px;
+  height: 26.3125rem;
   position: relative;
   top: 0;
   left: 0;
@@ -97,7 +81,7 @@ body {
   line-height: 1.39;
   padding: 0.9375rem;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-transform: translatey(50%);
   transform: translatey(50%);
 }/* HERO MEDIA *//*TEAM SECTION CSS*/.team {
@@ -464,7 +448,20 @@ input::placeholder {
 }/*A TOODOS LOS INPUT
 -webkit-appearance: none;
 -moz-appearance: none;
-appearance: none;*/@media all and (min-width: 21.75rem) {
+appearance: none;*//* GENERAL CSS */* {
+  padding: 0;
+  margin: 0;
+}
+
+a:focus {
+  outline: #1d0029 solid 2px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media all and (min-width: 21.75rem) {
   .hero__text {
     -webkit-transform: translatey(45%);
     transform: translatey(45%);
@@ -513,7 +510,7 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .header__nav-item {
-    padding-right: 18px;
+    padding-right: 1.125rem;
   }
 
   .header__nav-item:last-child {
@@ -727,7 +724,7 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .header__nav-item {
-    padding-right: 18px;
+    padding-right: 1.125rem;
   }
 
   .header__nav-item:last-child {
@@ -735,7 +732,7 @@ appearance: none;*/@media all and (min-width: 21.75rem) {
   }
 
   .hero {
-    height: 550px;
+    height: 34.375rem;
   }
 
   .hero__text {

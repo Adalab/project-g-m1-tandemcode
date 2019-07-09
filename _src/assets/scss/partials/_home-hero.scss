@@ -1,11 +1,8 @@
 /* HERO CSS */
 
 .hero {
-  background-image: url(../images/tandem.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 421px;
+  @include bg-img();
+  height: rem(421px);
   position: relative;
   top: 0;
   left: 0;
@@ -15,25 +12,25 @@
 }
 
 .hero__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.125rem;
+  font-family: $tf-open;
+  font-size: rem(18px);
   font-weight: 600;
   line-height: 1.39;
-  padding: 0.9375rem;
+  padding: rem(15px);
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   transform: translatey(50%);
 }
 
 /* HERO MEDIA */
 
-@media all and (min-width: 21.75rem) {
+@media all and (min-width: rem(348px)) {
   .hero__text {
     transform: translatey(45%);
   }
 }
 
-@media all and (min-width: 48rem) {
+@media all and (min-width: rem(768px)) {
   .hero__text {
     transform: translatey(0%);
     background-color: rgba(255, 255, 255, 0.8);
@@ -41,14 +38,14 @@
   }
 }
 
-@media all and (min-width: 75rem) {
+@media all and (min-width: rem(1200px)) {
   .hero{
-    height: 550px; }
+    height: rem(550px); }
   .hero__text {
     transform: translatey(0%);
     background-color: rgba(255, 255, 255, 0.8);
     max-width: 60%;
-    font-size: 1.5rem;
+    font-size: rem(24px);
     line-height: 1.25;
   }
 }
