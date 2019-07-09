@@ -3,43 +3,45 @@
 .who {
   text-align: center;
   position: relative;
+  padding: rem(30px) 0 rem(45px) 0;
 }
 .who__anchor-class {
   position: absolute;
   left: 0;
-  top: -5rem;
+  top: rem(-80px);
 }
 
 .who__title {
-  margin: 0;
-  padding: 1.875rem;
+  margin: 0 0 rem(30px) 0;
+  line-height: rem(45px);
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: rem(24px);
   font-family: "Rubik", sans-serif;
   font-weight: 700;
-  color: #099d8d;
+  color: $color-title-d;
 }
 
 .who__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: $tf-open;
 }
 
 .who__list-person {
-  margin-bottom: 2.8125rem;
+  margin-bottom: rem(45px);
 }
 
 .who__list-image {
-  width: 11.25rem;
   margin: auto;
+  width: rem(180px);
 }
 .who__image {
   box-sizing: border-box;
   width: 100%;
-  border: solid 0.3125rem rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  border-radius: rem(4px);
+  box-sizing: border-box;
 }
 .andre__image:hover{
   content: url('../images/andre-1x1.gif');
@@ -58,59 +60,60 @@
 }
 
 .who__name {
-  margin-top: 0.9375rem;
-  font-size: 1.25rem;
+  margin: rem(15px) 0 0 0;
+  font-size: rem(20px);
   font-weight: normal;
   line-height: 45px;
 }
 
 .who-text {
   margin: 0;
-  color: #54585a;
+  color: $color-text;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: rem(16px);
 }
 
 .social-list {
-  margin: 0.9375rem auto 0;
+  margin: rem(15px) auto 0;
   padding: 0;
   display: flex;
   justify-content: center;
   list-style: none;
+  padding:6px 0;
 }
 
 .social-list__icon:not(:last-child):after {
   content: "·";
-  font-size: 1rem;
-  margin-right: 0.3125rem;
+  font-size: rem(16px);
+  margin-right: rem(5px);
 }
 
 .social-list__link {
   text-decoration: none;
-  color: #099d8d;
+  color: $color-title-d;
 }
 .social-list__link:hover {
-  color:#1d0029;
+  color: $color-link-hover;
 }
 .fab:hover,
 .fas:hover {
   transform: scale(1.5);
 }
 
-@media all and (min-width: 48rem) {
+@media all and (min-width: 768px) {
   .who__anchor-class {
-    top: -3.75rem;
+    top: rem(-60px);
   }
   .who__list-person {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-gap: 30px;
-    margin-bottom: 67px;
+    grid-gap: rem(30px);
+    margin-bottom: rem(67px);
   }
   .who__list-image {
     grid-column: 1/3;
-    max-width: 206px;
     margin: 0;
+    width: 100%;
   }
   .who__name {
     margin-top: 0;
@@ -137,20 +140,17 @@
     justify-content: flex-end;
   }
 }
+/* WHO SECTION MEDIA 1200PX*/
 
-@media all and (min-width: 75rem) {
-  .who-text {
-    max-width: 27.7rem;
-  }
-
+@media all and (min-width: 1200px) {
   .who__list-person {
-    grid-gap: 40px;
+    grid-gap: rem(40px);
   }
   .who__description {
     grid-column: 3/6;
   }
   .who__list-person:nth-child(2n) .who__description {
-    grid-column: 2/6;
+    grid-column: 2/5;
   }
 
 }

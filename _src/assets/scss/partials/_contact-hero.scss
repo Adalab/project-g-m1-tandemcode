@@ -1,8 +1,15 @@
 .main__herocontact{
-    background-image: url('../images/grupo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 421px;
+    background-image: url(../images/grupo.jpg);
+    @include bg-img();
+    height: rem(300px);
+    @media all and (min-width: rem(1200px)) {
+      height: rem(400px);
+    }
 }
+/* CSS MEDIA HERO CONTACT 1200px*/
 
+@media all and (min-width: 1200px) {
+  .main__herocontact {
+    height: 400px;
+  }
+}

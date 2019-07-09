@@ -1,38 +1,34 @@
 /* HEADER CSS*/
 
 .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  @include fixedTop();
 }
 
 .header-1 {
   background-color: rgba(9, 157, 141, 0.95);
-  padding: 0.9375rem 0;
+  padding: rem(15px) 0;
   text-align: center;
 }
 
 .header-1__title {
-  font-family: "Rubik", sans-serif;
+  font-family: $tf_rubik;
   font-weight: 700;
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: rem(16px);
+  color:$color-header-title;
   text-transform: uppercase;
   line-height: 1.88;
 }
 
 .header__nav {
-  padding: 0.5rem 0 0.4375rem;
+  padding: rem(8px) 0 rem(7px);
   background: rgba(20, 217, 196, 0.9);
 }
 
 .header__nav-list {
-  font-size: 0.875rem;
+  font-size: rem(15px);
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-header-title;
   line-height: 2;
   list-style: none;
   display: flex;
@@ -41,22 +37,22 @@
   text-align: center;
 }
 
-.header__link {
-  color: #ffffff;
+.header__link, .tandem-code__link {
+  color:$white;
   text-decoration: none;
 }
 
-.header__link:hover {
+.header__link:hover, .tandem-code__link:hover {
+  color:$color-link-hover;
+}
+.tandem-code__link:hover {
   color: #1d0029;
 }
-.tandem-code__link {
-  text-decoration: none;
-  color: #ffffff;
-}
+
 
 /* CSS HEADER MEDIA */
 
-@media all and (min-width: 48rem) {
+@media all and (min-width: rem(768px)) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -67,27 +63,28 @@
   }
   .header__nav {
     width: 50%;
-    padding: 0.9375rem 0 0;
+    padding: rem(15px) 0 0;
     background-color: rgba(9, 157, 141, 0.95);
   }
   .header__nav .container {
-    margin: 0 2.8125rem 0 0;
+    margin: 0 rem(45px) 0 0;
   }
   .header__link:hover {
-    color: #1d0029;
+    color: $color-link-hover;
   }
   .header__nav-list {
     justify-content: flex-end;
   }
   .header__nav-item{
-    padding-right: 18px;
+    padding-right: rem(18px);
   }
-  .header__nav-item:last-child{
-    padding-right:0;
+  .header__nav-item:last-child {
+    padding-right: 0;
   }
 }
+/* CSS MEDIA 1200px*/
 
-@media all and (min-width: 75rem) {
+@media all and (min-width: rem(1200px)) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -98,30 +95,30 @@
   }
   .header__nav {
     width: 50%;
-    padding: 0.9375rem 0 0 0;
+    padding: rem(15px) 0 0 0;
     background-color: rgba(9, 157, 141, 0.95);
   }
   .header__nav .container {
-    margin: 0 2.8125rem 0 0;
+    margin: 0 rem(45px) 0 0;
   }
   .header-1 .container {
     margin: 0 0 0 auto;
-    width: 28.875rem;
+    width: rem(462px);
   }
   .header__nav .container {
     margin: 0 auto 0 0;
-    width: 28.875rem;
+    width: rem(462px);
   }
   .header__link:hover {
-    color: #1d0029;
+    color: $color-link-hover;
   }
   .header__nav-list {
     justify-content: flex-end;
   }
   .header__nav-item{
-    padding-right: 18px;
+    padding-right: rem(18px);
   }
-  .header__nav-item:last-child{
-    padding-right:0;
+  .header__nav-item:last-child {
+    padding-right: 0;
   }
 }

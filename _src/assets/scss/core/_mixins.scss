@@ -1,0 +1,14 @@
+@mixin fixedTop() {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+@mixin bg-img() {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
