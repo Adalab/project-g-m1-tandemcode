@@ -23,11 +23,34 @@
   text-transform: uppercase;
   line-height: 1.88;
   display: block;
-  text-align: left;
+  text-align: right;
   background-image: url(../images/bicis_blanco.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0% 0%;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+@keyframes move {
+  0%{
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 45% 0%;
+  }
+  70%{
+    background-position: 60% 0%;
+  }
+  90%{
+    background-position: 67% 0%;
+  }
+  100%{
+    background-position: 64% 0%;
+  }
 }
 
 .header__nav {
