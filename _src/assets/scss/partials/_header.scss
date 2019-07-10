@@ -9,14 +9,91 @@
   padding: rem(15px) 0;
   text-align: center;
 }
-
 .header-1__title {
   font-family: $tf_rubik;
   font-weight: 700;
   font-size: rem(16px);
-  color:$color-header-title;
+  color: $color-header-title;
   text-transform: uppercase;
   line-height: 1.88;
+  padding-left: 100px;
+  position: relative;
+  &::before {
+    content: "";
+    right: 100%;
+    top: 0;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-image: url(../images/bicis_blanco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: move320;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+  }
+}
+
+
+@media all and (min-width:360px){
+  .header-1__title::before{
+    animation-name: move360;
+  }
+  .header-1__title{
+    padding-right: 40px;
+  }
+}
+@media all and (min-width:415px){
+  .header-1__title::before{
+    animation-name: move415;
+  }
+  .header-1__title{
+    padding-right: 40px;
+  }
+}
+@media all and (min-width:480px){
+  .header-1__title::before{
+    animation-name: move480;
+  }
+  .header-1__title{
+    padding-right: 40px;
+  }
+}
+@media all and (min-width:560px){
+  .header-1__title::before{
+    animation-name: move560;
+  }
+  .header-1__title{
+    padding-right: 40px;
+  }
+}
+@media all and (min-width:640px){
+  .header-1__title::before{
+    animation-name: move640;
+  }
+  .header-1__title{
+    padding-right: 40px;
+  }
+}
+@media all and (min-width:768px){
+  .header-1__title::before{
+    animation-name: move768;
+  }
+  .header-1__title{
+    padding-right: 0;
+  }
+}
+
+@media all and (min-width:1200px){
+  .header-1__title::before{
+    animation-name: move1200;
+  }
+  .header-1__title{
+    padding-right: 30px;
+  }
 }
 
 .header__nav {
@@ -37,18 +114,24 @@
   text-align: center;
 }
 
-.header__link, .tandem-code__link {
-  color:$white;
+.header__link,
+.tandem-code__link {
+  color: $white;
   text-decoration: none;
+  transition: color ease 0.8s;
+}
+.header-1__title{
+  transition: color ease 0.8s;
+
 }
 
-.header__link:hover, .tandem-code__link:hover {
-  color:$color-link-hover;
+.header__link:hover,
+.header-1__title:hover {
+  color: $color-link-hover;
 }
 .tandem-code__link:hover {
-  color: #1d0029;
+  color: $color-link-hover;
 }
-
 
 /* CSS HEADER MEDIA */
 
@@ -59,7 +142,7 @@
   }
   .header-1 {
     flex-grow: 1;
-    text-align: left;
+    text-align: right;
   }
   .header__nav {
     width: 50%;
@@ -75,7 +158,7 @@
   .header__nav-list {
     justify-content: flex-end;
   }
-  .header__nav-item{
+  .header__nav-item {
     padding-right: rem(18px);
   }
   .header__nav-item:last-child {
@@ -92,6 +175,7 @@
   .header-1 {
     flex-grow: 1;
     text-align: left;
+
   }
   .header__nav {
     width: 50%;
@@ -115,7 +199,7 @@
   .header__nav-list {
     justify-content: flex-end;
   }
-  .header__nav-item{
+  .header__nav-item {
     padding-right: rem(18px);
   }
   .header__nav-item:last-child {

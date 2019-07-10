@@ -3,3 +3,157 @@
   $remSize: $size / 16px;
   @return #{$remSize}rem;
 }
+
+@keyframes move320 {
+  0% {
+    right:90%;}
+  50% {
+    right:60%;
+  }
+  75% {
+    right:30%;
+  }
+  90% {
+    right:12%;
+  }
+  100% {
+    right:17%;
+  }
+}
+@keyframes move360 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:80%;
+  }
+  50% {
+    right:60%;
+  }
+  75% {
+    right:35%;
+  }
+  90% {
+    right:25%;
+  }
+  100% {
+    right:27%;
+  }
+}
+@keyframes move415 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:80%;
+  }
+  50% {
+    right:60%;
+  }
+  75% {
+    right:35%;
+  }
+  90% {
+    right:27%;
+  }
+  100% {
+    right:30%;
+  }
+}
+@keyframes move480 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:80%;
+  }
+  50% {
+    right:60%;
+  }
+  75% {
+    right:40%;
+  }
+  90% {
+    right:30%;
+  }
+  100% {
+    right:35%;
+  }
+}
+@keyframes move560 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:75%;
+  }
+  50% {
+    right:60%;
+  }
+  75% {
+    right:45%;
+  }
+  90% {
+    right:33%;
+  }
+  100% {
+    right:37%;
+  }
+}
+@keyframes move640 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:75%;
+  }
+  50% {
+    right:60%;
+  }
+  75% {
+    right:48%;
+  }
+  90% {
+    right:36%;
+  }
+  100% {
+    right:40%;
+  }
+}
+@keyframes move768 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:80%;
+  }
+  50% {
+    right:50%;
+  }
+  75% {
+    right:20%;
+  }
+  90% {
+    right:2%;
+  }
+  100% {
+    right:5%;
+  }
+}
+@keyframes move1200 {
+  0% {
+    right:90%;
+  }
+  25% {
+    right:80%;
+  }
+  50% {
+    right:67%;
+  }
+  75% {
+    right:53%;
+  }
+  100% {
+    right:60%;
+  }
+}

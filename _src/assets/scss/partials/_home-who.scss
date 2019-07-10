@@ -43,11 +43,19 @@
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: rem(4px);
   box-sizing: border-box;
+  transition: content ease 0.8s;
+  transition-delay: 2s;
+}
+.andre__image{
+
+  content: url('../images/andre-1x1.jpg');
 }
 .andre__image:hover{
+
   content: url('../images/andre-1x1.gif');
 }
 .coco__image:hover {
+
   content: url('../images/coco-1x1.gif');
 }
 .cris__image:hover {
@@ -92,6 +100,10 @@
 .social-list__link {
   text-decoration: none;
   color: $color-title-d;
+  transition: color ease 0.8s;
+}
+.fab, .fas{
+  transition: transform ease 0.8s;
 }
 .social-list__link:hover {
   color: $color-link-hover;
