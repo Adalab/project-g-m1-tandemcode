@@ -111,6 +111,9 @@
     grid-gap: rem(30px);
     margin-bottom: rem(67px);
   }
+  .who__list-person:last-child {
+    margin-bottom: 0;
+  }
   .who__list-image {
     grid-column: 1/3;
     margin: 0;
