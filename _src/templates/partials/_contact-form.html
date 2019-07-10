@@ -9,62 +9,78 @@
         contacto con nosotras, estaremos encantadas de atenderte.
       </p>
     </div>
-    <form class="contact-form" method="POST" action="https://formspree.io/hola.tandemcode@gmail.com">
+
+    <form
+      class="contact-form"
+      method="POST"
+      action="https://formspree.io/hola.tandemcode@gmail.com"
+    >
       <p class="form-info">
         Todos los campos marcados con <span class="asterisco"> * </span> son
         obligatorios.
       </p>
-      <label class="contact-form-label label_name" for="contact-form_name">
-        Nombre completo <span class="asterisco">*</span>
-      </label>
 
-      <input
-        class="contact-form-input contact-form_name"
-        id="contact-form_name"
-        type="text"
-        name="Nombre completo *"
-        placeholder="Nombre..."
-        required
-      />
+      <div class="form-wrapper">
+        <label class="contact-form-label label_name" for="contact-form_name">
+          Nombre completo <span class="asterisco">*</span>
+        </label>
 
-      <label class="contact-form-label" for="contact-form_email">
-        Email <span class="asterisco">*</span>
-      </label>
+        <input
+          class="contact-form-input contact-form_name"
+          id="contact-form_name"
+          type="text"
+          name="Nombre completo *"
+          placeholder="Nombre..."
+          required
+        />
+      </div>
 
-      <input
-        class="contact-form-input contact-form_email"
-        id="contact-form_email"
-        type="email"
-        name="Email"
-        placeholder="nombre.apellidos@mail.com"
-        required
-      />
+      <div class="form-wrapper form-wrapper-email-phone">
+        <div class="form-wrapper_email">
+          <label class="contact-form-label" for="contact-form_email">
+            Email <span class="asterisco">*</span>
+          </label>
 
-      <label class="contact-form-label" for="contact-form_phone">
-        Teléfono
-      </label>
+          <input
+            class="contact-form-input contact-form_email"
+            id="contact-form_email"
+            type="email"
+            name="Email"
+            placeholder="nombre.apellidos@mail.com"
+            required
+          />
+        </div>
 
-      <input
-        class="contact-form-input contact-form_phone"
-        id="contact-form_phone"
-        type="tel"
-        name="Teléfono"
-        placeholder="Ej:123456789"
-      />
+        <div class="form-wrapper_phone">
+          <label class="contact-form-label" for="contact-form_phone">
+            Teléfono
+          </label>
 
-      <label class="contact-form-label" for="contact-form_message">
-        Mensaje
-        <span class="asterisco">*</span>
-      </label>
+          <input
+            class="contact-form-input contact-form_phone"
+            id="contact-form_phone"
+            type="tel"
+            name="Teléfono"
+            placeholder="Ej:123456789"
+          />
+        </div>
+      </div>
 
-      <textarea
-        class="contact-form_message"
-        id="contact-form_message"
-        name="Mensaje"
-        placeholder="¿Qué necesitas?"
-        required
-      >
-      </textarea>
+      <div class="form-wrapper">
+        <label class="contact-form-label" for="contact-form_message">
+          Mensaje
+          <span class="asterisco">*</span>
+        </label>
+
+        <textarea
+          class="contact-form_message"
+          id="contact-form_message"
+          name="Mensaje"
+          placeholder="¿Qué necesitas?"
+          required
+        >
+        </textarea>
+      </div>
 
       <input
         class="contact-form_button"
