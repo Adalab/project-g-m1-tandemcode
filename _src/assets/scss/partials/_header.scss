@@ -9,7 +9,6 @@
   padding: rem(15px) 0;
   text-align: center;
 }
-
 .header-1__title {
   font-family: $tf_rubik;
   font-weight: 700;
@@ -17,17 +16,42 @@
   color: $color-header-title;
   text-transform: uppercase;
   line-height: 1.88;
-  background-image: url(../images/bicis_blanco.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-delay: 1s;
+  padding-left:300px;
+  position:relative;
+  background-color:red;
+    &::before{
+      content:"";
+      right:100%;
+      top:0;
+      position: absolute;
+      width:200px;
+      height: 30px;
+      background-color: yellow;
+      background-image: url(../images/bicis_blanco.png);
+    };
 }
+
+
+// .header-1__title {
+//   font-family: $tf_rubik;
+//   font-weight: 700;
+//   font-size: rem(16px);
+//   color: $color-header-title;
+//   text-transform: uppercase;
+//   line-height: 1.88;
+//   display: block;
+//   text-align: right;
+//   background-image: url(../images/bicis_blanco.png);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: 0% 0%;
+//   animation-name: move;
+//   animation-duration: 5s;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: forwards;
+//   animation-timing-function: linear;
+//   animation-delay: 1s;
+// }
 
 @keyframes move {
   0% {
