@@ -395,6 +395,8 @@ body {
   color: #54585a;
   text-align: center;
   line-height: 24px;
+  max-width: 620px;
+  margin: auto;
 }/*CSS FORM*/.form-info {
   margin: 58px 0;
   font-size: 12px;
