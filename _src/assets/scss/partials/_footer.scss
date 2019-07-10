@@ -2,8 +2,6 @@
   font-family: $tf-open;
   border-top: 1px solid $grey-light;
   padding: rem(30px) 0 rem(45px) 0;
-  //height: 250px;
-  //box-sizing: border-box;
 }
 .footer__text {
   text-align: center;
@@ -78,6 +76,7 @@
   }
   .footer__nav{
     margin: 0;
+    padding: 0;
   }
   .footer__nav-list,
   .footer__link {
