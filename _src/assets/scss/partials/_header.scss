@@ -118,14 +118,19 @@
 .tandem-code__link {
   color: $white;
   text-decoration: none;
+  transition: color ease 0.8s;
+}
+.header-1__title{
+  transition: color ease 0.8s;
+
 }
 
 .header__link:hover,
-.tandem-code__link:hover {
+.header-1__title:hover {
   color: $color-link-hover;
 }
 .tandem-code__link:hover {
-  color: #1d0029;
+  color: $color-link-hover;
 }
 
 /* CSS HEADER MEDIA */
